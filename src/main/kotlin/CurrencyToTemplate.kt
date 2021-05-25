@@ -203,8 +203,9 @@ class CurrencyToTemplate {
 
 fun main() {
     CurrencyToTemplate().eurTmp.forEachIndexed { index, element ->
+        val tableName = "price_schema"
         val commonTemplate = """
-        <insert tableName="currency_price">
+        <insert tableName="$tableName">
             <column name="currency" value="${Currencies.EUR.name}"/>
             <column name="amount" value="$element"/>
             <column name="price_id" value="$index"/>
