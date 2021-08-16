@@ -221,6 +221,36 @@ class CurrencyToTemplate {
         229,
         599
     )
+    var tier0 = listOf(
+        0,
+        2,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        36,
+        38,
+        39,
+        44
+    )
     var tier1 = listOf(
         0,
         1,
@@ -251,7 +281,8 @@ class CurrencyToTemplate {
         37,
         43
     )
-    var tier2 = listOf(0,
+    var tier2 = listOf(
+        0,
         1,
         5,
         7,
@@ -278,8 +309,10 @@ class CurrencyToTemplate {
         32,
         33,
         34,
-        42)
-    var tier3 = listOf(0,
+        42
+    )
+    var tier3 = listOf(
+        0,
         1,
         4,
         6,
@@ -306,8 +339,10 @@ class CurrencyToTemplate {
         30,
         31,
         32,
-        41)
-    var tier4 = listOf(0,
+        41
+    )
+    var tier4 = listOf(
+        0,
         1,
         3,
         6,
@@ -334,14 +369,15 @@ class CurrencyToTemplate {
         24,
         26,
         27,
-        40)
+        40
+    )
 
 }
 
 fun main() {
-    CurrencyToTemplate().tier4.forEachIndexed { index, element ->
+    CurrencyToTemplate().tier0.forEachIndexed { index, element ->
         val tableName = "price_schema_element"
-        val tier = 4
+        val tier = 0
         val commonTemplate = """
         <insert tableName="$tableName">
             <column name="tier" value="$tier"/>
