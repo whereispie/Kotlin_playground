@@ -1,3 +1,5 @@
+package lectera
+
 class NewStaticCategoryV2 {
     var allNodes = mutableMapOf(
         "experienceIcon1" to "",
@@ -7,14 +9,6 @@ class NewStaticCategoryV2 {
         "skillIcon1" to "",
         "skillIcon2" to "",
         "skillIcon3" to "",
-
-        "mobileSkillIcon1" to "",
-        "mobileSkillIcon2" to "",
-        "mobileSkillIcon3" to "",
-
-        "mobileTargetingItemIcon1" to "",
-        "mobileTargetingItemIcon2" to "",
-        "mobileTargetingItemIcon3" to "",
 
         "targetingItemIcon1" to "",
         "targetingItemIcon2" to "",
